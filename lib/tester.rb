@@ -31,10 +31,13 @@ class String
     #puts new_str
     new_str.each do |word|
       #puts "sending #{word}!!!!!!!!!!!!!!!!!"
-      if word.sentence? or word.question? or word.exclamation? 
+      if word.sentence? or word.question? or word.exclamation?
         total += 1
       end
     end
     total
   end 
 end
+
+complex_string = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
+puts complex_string.count_sentences
